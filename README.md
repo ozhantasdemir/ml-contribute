@@ -28,12 +28,19 @@ npm install
 npm start
 ```
 
-4. Start the backend development server:
+4. Install packages(Python 3.8 is required)
+
+```shell
+pip install -r requirements.txt
+```
+
+5. Start the backend development server:
 
 ```shell
 python src/app.py
 ```
 
-5. Access the application by visiting http://localhost:3000 in your web browser.
+6. Access the application by visiting http://localhost:3000 in your web browser.
 
 *The purpose of the backend code is to create a demo application that takes uploaded files and passes them as input to the corresponding Python scripts. However, due to security restrictions in the React browser's local storage, we are unable to copy the uploaded files directly to our local storage. As a workaround, the code utilizes static datasets located in the specified directory inside python code when the buttons are clicked. The code needs to be deployed to a cloud environment. This is necessary to overcome the limitations imposed by browser security measures and enable the application to access and process the uploaded files.*
+
